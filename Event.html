@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 100px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 10px;
+            width: 500px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="heading">
+          <h2>Booking Summary</h2>
+    </div>
+    <div id="maincontent">
+        <p>Cost per Ticket $9</p>
+        <script>
+            //Write the code to display the discounted price on click of the text
+           function Evaluate(){
+                const price=9;
+                const count=prompt("How many tickets do you want (should be <6)");
+                var Total_cost;
+                if(count>=6){
+                    alert("you try to book too much");
+                }
+                else if(count<2){
+                    Total_cost=9*count;
+                    return Total_cost;
+                }
+                else{
+                    let temp=price*count;
+                    Total_cost=temp-(temp*(5/100));
+                    return Total_cost;
+                }
+           }
+           let decide=confirm("welcome to Booking.com (do you want to book enter ok)");
+           if(decide){
+                document.write("Total Cost : "+Evaluate());
+           }
+
+        </script>
+    </div>
+</body>
+ 
+</html>

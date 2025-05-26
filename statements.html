@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 200px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
+        <div id="maincontent">
+            <h4>Your Ticket Details:</h4>
+            <br>
+            <script>
+                // Write the code to display the total price and discounted price of tickets
+                const TicketCost=9;
+                var numberOftickets=3;
+                var disconut;
+                if(numberOftickets==1){
+                    discount=9-(9*(5/100));
+                }
+                else if(numberOftickets>1 && numberOftickets<=3){
+                    discount=9-(9*0.07);
+                }
+                else{
+                    disconut=9-(9*(9/100));
+                }
+
+                document.write("number tickets your puches "+ numberOftickets +"<br/>");
+                document.write("cost for each ticket "+ TicketCost + "<br/>");
+                 document.write("your disconut is "+ disconut + "<br/>");
+                 document.write("Total cost is "+ (numberOftickets * disconut )+ "<br/>");
+                
+
+            </script>
+        </div>
+    </center>
+</body>
+</html>

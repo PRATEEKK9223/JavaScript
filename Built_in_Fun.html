@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-In</title>
+</head>
+<body>
+    <h1>Simple calculator</h1>
+    <p>In tis webpage you can perform simple calculation</p>
+
+    <script>
+        function calculator(){
+            alert("shell we start the  calculation");
+            let num1=prompt("Enter first number");
+            let num2=prompt("enter second number");
+
+            let addition=confirm("do you want to add click ok ");
+            if(addition){
+                document.write("Sum of "+num1+ "and " +num2+ "is "+(parseInt(num1)+parseInt(num2))+"<br/>");
+            }
+
+            let sub=confirm("do you want to sub click ok");
+            if(sub){
+                let res=eval((parseInt(num1)-parseInt(num2)));
+                 document.write("sub of "+num1+ "and " +num2+ "is "+ res+"<br/>");
+            }
+
+             let mul=confirm("do you want to multiply click ok");
+            if(mul){
+                 document.write("product  of "+num1+ "and " +num2+ "is "+(parseInt(num1)*parseInt(num2)));
+            }
+        }
+
+        //setTimeout(calculator,3000);
+
+        setInterval(setTimeout(calculator,3000),5000);
+
+
+    </script>
+</body>
+</html>
