@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    welcome to Patternscript
+    <script>
+        let emailPattern = new RegExp("(?=@+) (?=.com+)");
+        let email=prompt("enter the email");
+
+        if(emailPattern.test(email)){
+            alert("vaid email");
+        }
+        else{
+            alert("Invalid email");
+        }
+            </script>
+</body>
+</html>
