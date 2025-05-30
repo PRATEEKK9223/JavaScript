@@ -1,0 +1,13 @@
+.container{
+    height:300px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#main{
+    display:flex;
+    justify-content: space-around;
+}
